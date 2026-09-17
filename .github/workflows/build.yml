@@ -23,7 +23,7 @@ jobs:
           flutter-version: '3.19.x'
           channel: 'stable'
           
-   - name: Fix and Generate Android Project
+- name: Fix and Generate Android Project
         run: |
           flutter pub get
           flutter build apk --release
@@ -33,5 +33,3 @@ jobs:
         with:
           name: app-release
           path: build/app/outputs/flutter-apk/app-release.apk
-
-     
